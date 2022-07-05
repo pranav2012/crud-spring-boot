@@ -1,5 +1,7 @@
 ## Spring CRUD Application
 
+Check Live Application here: https://amex-spring-crud-app.herokuapp.com/
+
 ### Steps to Run
 
 1. Run `mvn clean install` on terminal / comand prompt
@@ -16,7 +18,7 @@ java -jar target/spring-boot-ops.war
 1. #### For fetching all the interns
     
     ```
-    End point: {base_url}/getInterns
+    End point: https://amex-spring-crud-app.herokuapp.com/getInterns
 
     Method : GET
     ```
@@ -24,7 +26,7 @@ java -jar target/spring-boot-ops.war
 2. #### For adding a new intern
 
    ``` 
-    End point: {base_url}/addIntern
+    End point: https://amex-spring-crud-app.herokuapp.com/addIntern
 
     Method : POST
 
@@ -37,7 +39,7 @@ java -jar target/spring-boot-ops.war
 3. #### For updating intern value
 
     ```
-    End point: {base_url}/updateIntern/{intern_id}
+    End point: https://amex-spring-crud-app.herokuapp.com/updateIntern/{intern_id}
 
     Method : POST
 
@@ -50,7 +52,7 @@ java -jar target/spring-boot-ops.war
 4. #### For removing an intern
 
     ```
-    End point: {base_url}/deleteIntern/{intern_id}
+    End point: https://amex-spring-crud-app.herokuapp.com/deleteIntern/{intern_id}
 
     Method : POST
     ```

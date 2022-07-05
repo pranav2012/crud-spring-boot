@@ -11,12 +11,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
 public class InternController {
 
     @Autowired private AmexService repo;
+
+    @GetMapping(value="/")
+    public String defaultState() {
+        return "Hey!, Welcome to Spring Crud Application by Pranav" + "\r\n" + "checkout /getInterns to get list of all available interns";
+    }
 
     @GetMapping(value="getInterns")
     public List<AmexIntern> getIntern() {
